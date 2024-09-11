@@ -55,7 +55,7 @@
                                 <span class="text-red-700">*</span>
                             </label>
                             <input type="text" name="author" id="author"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 value="{{$researchPublication->author}}"
                                 required>
                         </div>
@@ -67,7 +67,7 @@
                                 <span class="text-red-700">*</span>
                             </label>
                             <input type="text" name="title" id="title"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 value="{{$researchPublication->title}}"
                                 required>
                         </div>
@@ -77,7 +77,7 @@
                                 <span class="text-red-700">*</span>
                             </label>
                             <input type="text" name="journal_name" id="journal_name"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 value="{{$researchPublication->journal_name}}"
                                 required>
                         </div>
@@ -87,7 +87,7 @@
                                 <span class="text-red-700">*</span>
                             </label>
                             <input type="number" name="publishing_year" id="publishing_year"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 required min="2000" max="2024"
                                 value="{{$researchPublication->publishing_year}}"
                                 >
@@ -98,7 +98,7 @@
                                 <span class="text-red-700">*</span>
                             </label>
                             <input type="text" name="journal_volume" id="journal_volume"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 required
                                 value="{{$researchPublication->journal_volume}}"
                                 >
@@ -110,7 +110,7 @@
                                 <span class="text-red-700">*</span>
                             </label>
                             <input type="text" name="impact_factor" id="impact_factor"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 required
                                 value="{{$researchPublication->impact_factor}}"
                                 >
@@ -123,7 +123,7 @@
                                 <span class="text-red-700">*</span>
                             </label>
                             <input type="text" name="doi_url" id="doi_url"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 required
                                 value="{{$researchPublication->doi_url}}"
                                 >
@@ -135,7 +135,7 @@
                                 <span class="text-red-700">*</span>
                             </label>
                             <select type="text" name="journal_type" id="journal_type"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 required>
                                 <option value="National">National</option>
                                 <option value="International">International</option>
@@ -149,7 +149,7 @@
                                 <span class="text-red-700">*</span>
                             </label>
                             <select type="text" name="hec_recognized" id="hec_recognized"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 required>
                                 <option value="1">Yes</option>
                                 <option value="0">No</option>
@@ -165,7 +165,7 @@
                                 <span class="text-red-700">*</span>
                             </label>
                             <select type="text" name="hrjs_category" id="hrjs_category"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 required>
                                 <option value="W">W</option>
                                 <option value="X">X</option>

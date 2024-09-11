@@ -31,13 +31,13 @@
                             @foreach($projects as $project)
                             <tr>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                    <a href="{{ route('research_projects.show', $project) }}" class="text-blue-500 hover:text-blue-700 font-bold">{{ $project->title }}</a>     
+                                    <a href="{{ route('research_projects.show', $project) }}" class="text-indigo-500 hover:text-indigo-700 font-bold">{{ $project->title }}</a>     
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                     {{ $project->funding_agency }}
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                    <a href="{{ route('research_projects.edit', $project) }}" class="text-blue-500 hover:text-blue-700">Edit</a>
+                                    <a href="{{ route('research_projects.edit', $project) }}" class="text-indigo-500 hover:text-indigo-700">Edit</a>
                                     <form action="{{ route('research_projects.destroy', $project) }}" method="POST" class="inline-block">
                                         @csrf
                                         @method('DELETE')

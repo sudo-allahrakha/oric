@@ -11,6 +11,14 @@ class ProfileController extends Controller
     public function edit()
     {
         $profile = Auth::user()->profile;
+
+        if (!$profile) {
+            // Create a new profile if it does not exist
+            $profile = new Profile;
+            $profile->user_id = Auth::user()->id;
+            $profile->save();
+        }
+
         return view('profile.edit', compact('profile'));
     }
 

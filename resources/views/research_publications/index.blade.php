@@ -41,7 +41,7 @@
                             @foreach($publications as $publication)
                             <tr>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                    <a href="{{ route('research_publications.show', $publication) }}" class="text-blue-500 hover:text-blue-700 font-bold">{{ $publication->title }}</a>     
+                                    <a href="{{ route('research_publications.show', $publication) }}" class="text-indigo-500 hover:text-indigo-700 font-bold">{{ $publication->title }}</a>     
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                     {{ $publication->journal_name }}
@@ -53,7 +53,7 @@
                                     {{ $publication->impact_factor }}
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm text-center">
-                                    <a href="{{ route('research_publications.edit', $publication) }}" class="text-blue-500 hover:text-blue-700">Edit</a>
+                                    <a href="{{ route('research_publications.edit', $publication) }}" class="text-indigo-500 hover:text-indigo-700">Edit</a>
                                     <form action="{{ route('research_publications.destroy', $publication) }}" method="POST" class="inline-block">
                                         @csrf
                                         @method('DELETE')

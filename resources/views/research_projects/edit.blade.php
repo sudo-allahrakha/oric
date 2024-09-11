@@ -52,7 +52,7 @@
                                 Title
                             </label>
                             <input type="text" name="title" id="title" value="{{ $researchProject->title }}"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 required>
                         </div>
                         <div class="mb-4">
@@ -61,7 +61,7 @@
                             </label>
                             <input type="text" name="funding_agency" id="funding_agency"
                                 value="{{ $researchProject->funding_agency }}"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 required>
                         </div>
                         <div class="mb-4">
@@ -70,7 +70,7 @@
                             </label>
                             <input type="text" name="agency_level" id="agency_level"
                                 value="{{ $researchProject->agency_level }}"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 required>
                         </div>
                         <div class="mb-4">
@@ -79,7 +79,7 @@
                             </label>
                             <input type="text" name="co_pi_pi" id="co_pi_pi"
                                 value="{{ $researchProject->co_pi_pi }}"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 required>
                         </div>
                         <div class="mb-4">
@@ -87,7 +87,7 @@
                                 Worth (PKR)
                             </label>
                             <input type="number" name="worth" id="worth" value="{{ $researchProject->worth }}"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 required>
                         </div>
                         <div class="mb-4">
@@ -96,7 +96,7 @@
                             </label>
                             <input type="date" name="start_date" id="start_date"
                                 value="{{ $researchProject->start_date }}"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 required>
                         </div>
                         <div class="mb-4">
@@ -105,7 +105,7 @@
                             </label>
                             <input type="date" name="completion_date" id="completion_date"
                                 value="{{ $researchProject->completion_date }}"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full"
                                 required>
                         </div>
                         <div class="flex items-center justify-between">

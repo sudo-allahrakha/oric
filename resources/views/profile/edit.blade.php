@@ -1,4 +1,4 @@
-<!-- resources/views/tickets/create.blade.php -->
+<!-- resources/views/profile/edit.blade.php -->
 
 <x-app-layout>
     <x-slot name="header">
@@ -29,25 +29,25 @@
                                         <label class="block text-gray-700">Academic Title <span class="text-red-700">*</span></label>
                                         <input type="text" name="academic_title"
                                             value="{{ $profile->academic_title ?? '' }}"
-                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required>
+                                            class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" required>
                                             
                                     </div>
                                     <div>
                                         <label class="block text-gray-700">Subject/Major <span class="text-red-700">*</span></label>
                                         <input type="text" name="subject" value="{{ $profile->subject ?? '' }}"
-                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required>
+                                            class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" required>
                                     </div>
                                     <div>
                                         <label class="block text-gray-700">Specialization <span class="text-red-700">*</span></label>
                                         <input type="text" name="specialization"
                                             value="{{ $profile->specialization ?? '' }}"
-                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required>
+                                            class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" required>
                                     </div>
                                     <div>
                                         <label class="block text-gray-700">Research Area <span class="text-red-700">*</span></label>
                                         <input type="text" name="research_area"
                                             value="{{ $profile->research_area ?? '' }}"
-                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required>
+                                            class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" required>
                                     </div>
                                     
 
@@ -70,27 +70,27 @@
                                         <label class="block text-gray-700">Researcher ID/URL</label>
                                         <input type="text" name="researcher_id"
                                             value="{{ $profile->researcher_id ?? '' }}"
-                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                                            class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full">
                                     </div>
                                     <div>
                                         <label class="block text-gray-700">ORCID ID/URL</label>
                                         <input type="text" name="orcid_id" value="{{ $profile->orcid_id ?? '' }}"
-                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                                            class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full">
                                     </div>
                                     <div>
                                         <label class="block text-gray-700">Google Scholar Link</label>
                                         <input type="text" name="google_scholar_link"
                                             value="{{ $profile->google_scholar_link ?? '' }}"
-                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                                            class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full">
                                     </div>
                                     <div>
                                         <label class="block text-gray-700">Contact # <span class="text-red-700">*</span></label>
                                         <input type="text" name="contact" value="{{ $profile->contact ?? '' }}"
-                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required>
+                                            class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" required>
                                     </div>
                                     <div>
                                         <label class="block text-gray-700">Biosketch</label>
-                                        <textarea name="biosketch" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">{{ $profile->biosketch ?? '' }}</textarea>
+                                        <textarea name="biosketch" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full">{{ $profile->biosketch ?? '' }}</textarea>
                                     </div>
                                     <div class="flex items-center justify-end mt-4">
                                         <button type="submit"

@@ -62,7 +62,7 @@
                             <tr>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                     <a href=" {{ $researchPublication->doi_url }}"
-                                        class="text-blue-500 hover:text-blue-700 font-bold">
+                                        class="text-indigo-500 hover:text-indigo-700 font-bold">
                                         {{ $researchPublication->title }}
                                     </a>
                                 </td>

@@ -3,7 +3,11 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ResearchProjectController;
 use App\Http\Controllers\ResearchPublicationController;
+use App\Http\Controllers\EducationController;
 use App\Http\Controllers\TicketController;
+use App\Http\Controllers\TrainingController;
+use App\Http\Controllers\AbstractPublishedController;
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -24,5 +28,9 @@ Route::middleware([
     Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
     Route::resource('research_projects', ResearchProjectController::class);
     Route::resource('research_publications', ResearchPublicationController::class);
+    Route::resource('education', EducationController::class);
+    Route::resource('trainings', TrainingController::class);
+    Route::resource('abstracts', AbstractPublishedController::class);
+
 
 });
