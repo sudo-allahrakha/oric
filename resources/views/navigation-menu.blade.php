@@ -53,8 +53,10 @@
                                 tabindex="-1" id="menu-item-0">Projects</a>
                             <a href="{{ route('research_publications.index') }}" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
                                 tabindex="-1" id="menu-item-1">Publications</a>
-                            <a href="{{ route('abstracts.index') }}" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                            <a href="{{ route('research_abstracts.index') }}" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
                                 tabindex="-1" id="menu-item-2">Abstracts Published</a>
+                                <a href="{{ route('research-domains.index') }}" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                tabindex="-1" id="menu-item-2">Research Domains</a>
 
                         </div>
                     </div>
@@ -90,8 +92,46 @@
                                 tabindex="-1" id="menu-item-0">Education</a>
                             <a href="{{ route('trainings.index') }}" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
                                 tabindex="-1" id="menu-item-1">Trainings</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-                                tabindex="-1" id="menu-item-2">Workshops</a>
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div x-data="{ open: false }" class="relative inline-block text-left">
+                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                        <button @click="open = !open"
+                            class="inline-flex items-center px-1 pt-6  text-sm font-medium leading-5 text-gray-600 focus:outline-none transition"
+                            id="menu-button" aria-expanded="true" aria-haspopup="true">
+                           Employment & Achievements
+                            <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div x-show="open" @click.away="open = false" x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="transform opacity-0 scale-95"
+                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="transform opacity-100 scale-100"
+                        x-transition:leave-end="transform opacity-0 scale-95"
+                        class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                        <div class="py-1" role="none">
+                            <a href="{{ route('employment-records.index') }}" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                tabindex="-1" id="menu-item-0">Employment</a>
+                            
+                            <a href="{{ route('distinctions.index') }}" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                tabindex="-1" id="menu-item-2">Distinctions</a>
+
+
+                            <a href="{{ route('patents.index') }}" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                            tabindex="-1" id="menu-item-2">Patents</a>
 
                         </div>
                     </div>

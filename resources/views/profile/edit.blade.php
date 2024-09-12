@@ -26,7 +26,7 @@
                                 @method('PUT')
                                 <div class="grid grid-cols-1 gap-6">
                                     <div>
-                                        <label class="block text-gray-700">Academic Title <span class="text-red-700">*</span></label>
+                                        <label class="block text-gray-700">Academic Title / Designation <span class="text-red-700">*</span></label>
                                         <input type="text" name="academic_title"
                                             value="{{ $profile->academic_title ?? '' }}"
                                             class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" required>

@@ -6,7 +6,12 @@ use App\Http\Controllers\ResearchPublicationController;
 use App\Http\Controllers\EducationController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\TrainingController;
-use App\Http\Controllers\AbstractPublishedController;
+use App\Http\Controllers\ResearchAbstractController;
+use App\Http\Controllers\EmploymentRecordController;
+use App\Http\Controllers\DistinctionController;
+use App\Http\Controllers\PatentController;
+use App\Http\Controllers\ResearchDomainController;
+
 
 use Illuminate\Support\Facades\Route;
 
@@ -30,7 +35,12 @@ Route::middleware([
     Route::resource('research_publications', ResearchPublicationController::class);
     Route::resource('education', EducationController::class);
     Route::resource('trainings', TrainingController::class);
-    Route::resource('abstracts', AbstractPublishedController::class);
+    Route::resource('research_abstracts', ResearchAbstractController::class);
+    Route::resource('employment-records', EmploymentRecordController::class);
+    Route::resource('distinctions', DistinctionController::class);
+    Route::resource('patents', PatentController::class);
+    Route::resource('research-domains', ResearchDomainController::class);
+
 
 
 });
