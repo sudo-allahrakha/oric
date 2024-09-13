@@ -10,9 +10,9 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white">
                     <a href="{{ route('trainings.create') }}"
-                    class="bg-gray-700 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded mb-4 inline-block">Add
-                    Training</a>
-                    
+                        class="bg-gray-700 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded mb-4 inline-block">Add
+                        Training</a>
+
                     @if (session('success'))
                         <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4">
                             {{ session('success') }}
@@ -39,11 +39,14 @@
                                     <td class="py-2 px-4 border-b">{{ $training->institute }}</td>
                                     <td class="py-2 px-4 border-b">{{ $training->training_type }}</td>
                                     <td class="py-2 px-4 border-b">
-                                        <a href="{{ route('trainings.edit', $training) }}" class="text-indigo-500 hover:underline">Edit</a>
-                                        <form action="{{ route('trainings.destroy', $training) }}" method="POST" class="inline-block">
+                                        <a href="{{ route('trainings.edit', $training) }}"
+                                            class="text-indigo-500 hover:underline">Edit</a>
+                                        <form action="{{ route('trainings.destroy', $training) }}" method="POST"
+                                            class="inline-block">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="text-red-500 hover:underline ml-2">Delete</button>
+                                            <button type="submit"
+                                                class="text-red-500 hover:underline ml-2">Delete</button>
                                         </form>
                                     </td>
                                 </tr>

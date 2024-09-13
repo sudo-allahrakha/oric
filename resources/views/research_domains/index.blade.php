@@ -14,20 +14,42 @@
                     <table class="min-w-full leading-normal">
                         <thead>
                             <tr>
-                                <th>Research Area</th>
-                                <th>Keywords</th>
-                                <th>Targeted SDGs</th>
-                                <th>Actions</th>
+                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Research Area</th>
+                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Keywords</th>
+                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Targeted SDGs</th>
+                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($researchDomains as $domain)
                                 <tr>
-                                    <td>{{ $domain->research_area }}</td>
-                                    <td>{{ implode(', ', $domain->keywords) }}</td>
-                                    <td>{{ implode(', ', $domain->targeted_sdg) }}</td>
-                                    <td>
-                                        <a href="{{ route('research-domains.edit', $domain->id) }}" class="text-indigo-500">Edit</a>
+                                    <td class="px-6 py-4">{{ $domain->research_area }}</td>
+
+                                    {{-- Display keywords as chips --}}
+                                    <td class="px-6 py-4">
+                                        <div class="flex flex-wrap gap-2">
+                                            @foreach ($domain->keywords as $keyword)
+                                                <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full inline-flex items-center">
+                                                    {{ $keyword }}
+                                                </span>
+                                            @endforeach
+                                        </div>
+                                    </td>
+
+                                    {{-- Display targeted SDGs as chips --}}
+                                    <td class="px-6 py-4">
+                                        <div class="flex flex-wrap gap-2">
+                                            @foreach ($domain->targeted_sdg as $sdg)
+                                                <span class="bg-green-200 text-green-800 px-2 py-1 rounded-full inline-flex items-center">
+                                                    {{ $sdg }}
+                                                </span>
+                                            @endforeach
+                                        </div>
+                                    </td>
+
+                                    {{-- Actions: Edit and Delete --}}
+                                    <td class="px-6 py-4">
+                                        <a href="{{ route('research-domains.edit', $domain->id) }}" class="text-indigo-500 mr-2">Edit</a>
                                         <form action="{{ route('research-domains.destroy', $domain->id) }}" method="POST" class="inline-block">
                                             @csrf
                                             @method('DELETE')
